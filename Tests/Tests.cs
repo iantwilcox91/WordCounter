@@ -17,13 +17,23 @@ namespace WordCounter
     }
 
     [Fact]
-    public void Test1_oneLetterButDifferent_0()
+    public void Test2_oneLetterButDifferent_0()
     {
       string newWordInput = "a";
       string newSentenceInput = "b";
       UserWords newUserWords = new UserWords(newWordInput, newSentenceInput);
       Assert.Equal(0 , newUserWords.CountRepeats() );
     }
+
+    [Fact]
+    public void Test2_oneLetterWithDoubbleString_2()
+    {
+      string newWordInput = "a";
+      string newSentenceInput = "a a";
+      UserWords newUserWords = new UserWords(newWordInput, newSentenceInput);
+      Assert.Equal(2 , newUserWords.CountRepeats() );
+    }
+
 
 
   }
