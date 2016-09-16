@@ -70,5 +70,14 @@ namespace WordCounter
       Assert.Equal(2 , newUserWords.CountRepeats() );
     }
 
+    [Fact]
+    public void Test8_WordInALongSentence_2()
+    {
+      string newWordInput = "the";
+      string newSentenceInput = "the dog over there behind the fence is theirs";
+      UserWords newUserWords = new UserWords(newWordInput, newSentenceInput);
+      Assert.Equal(2 , newUserWords.CountRepeats() );
+    }
+
   }
 }
