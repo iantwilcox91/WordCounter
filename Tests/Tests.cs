@@ -61,9 +61,14 @@ namespace WordCounter
       Assert.Equal(0 , newUserWords.CountRepeats() );
     }
 
-
-
-
+    [Fact]
+    public void Test7_WordDuplicates_2()
+    {
+      string newWordInput = "cat";
+      string newSentenceInput = "cat cat";
+      UserWords newUserWords = new UserWords(newWordInput, newSentenceInput);
+      Assert.Equal(2 , newUserWords.CountRepeats() );
+    }
 
   }
 }
