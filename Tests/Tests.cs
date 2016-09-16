@@ -43,6 +43,16 @@ namespace WordCounter
       Assert.Equal(1 , newUserWords.CountRepeats() );
     }
 
+    [Fact]
+    public void Test5_SameWord_1()
+    {
+      string newWordInput = "apple";
+      string newSentenceInput = "apple";
+      UserWords newUserWords = new UserWords(newWordInput, newSentenceInput);
+      Assert.Equal(1 , newUserWords.CountRepeats() );
+    }
+
+
 
 
 
