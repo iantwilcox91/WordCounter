@@ -16,9 +16,11 @@ namespace WordCounter
         return View["index.cshtml"];
       };
 
-      Get["/result"] = _ =>
+      Post["/result"] = _ =>
       {
-        return View["result.cshtml"];
+        UserWords newUserWords = new UserWords(Request.Form["InputWordForm"], Request.Form["InputSentenceForm"] );
+        newUserWords.SetUserScore();
+        return View["result.cshtml" , newUserWords];
       };
 
     }

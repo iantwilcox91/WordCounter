@@ -8,11 +8,13 @@ namespace WordCounter.Objects
   {
     private string _inputWord;
     private string _inputSentence;
+    private int _userScore;
 
     public UserWords(string inputWord, string inputSentence)
     {
       _inputWord = inputWord;
       _inputSentence = inputSentence;
+      _userScore = 0;
     }
     public string GetInputWord()
     {
@@ -29,6 +31,14 @@ namespace WordCounter.Objects
     public void SetInputSentence(string inputSentence)
     {
       _inputSentence = inputSentence;
+    }
+    public int GetUserScore()
+    {
+      return _userScore;
+    }
+    public void SetUserScore()
+    {
+      _userScore = CountRepeats();
     }
     public int CountRepeats()
     {
