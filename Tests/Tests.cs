@@ -26,13 +26,23 @@ namespace WordCounter
     }
 
     [Fact]
-    public void Test2_oneLetterWithDoubbleString_2()
+    public void Test3_oneLetterWithDoubbleString_2()
     {
       string newWordInput = "a";
       string newSentenceInput = "a a";
       UserWords newUserWords = new UserWords(newWordInput, newSentenceInput);
       Assert.Equal(2 , newUserWords.CountRepeats() );
     }
+
+    [Fact]
+    public void Test4_oneLetterWithDifferentDoubbleString_1()
+    {
+      string newWordInput = "a";
+      string newSentenceInput = "a b";
+      UserWords newUserWords = new UserWords(newWordInput, newSentenceInput);
+      Assert.Equal(1 , newUserWords.CountRepeats() );
+    }
+
 
 
 
