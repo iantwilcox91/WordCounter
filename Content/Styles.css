@@ -1,0 +1,16 @@
+.body1 {
+  background-image: url("http://4.bp.blogspot.com/-domFSoi9ekQ/UqH8IudZCQI/AAAAAAAANp0/mkKfvK_vhIU/s6600/Free-Fast-Online-Word-And-Character-Counter-Tool.png");
+}
+.body2 {
+  background-image: url("http://previews.123rf.com/images/kbuntu/kbuntu1107/kbuntu110700417/9998899-Magnifying-Glass-with-the-word-Results-on-white-background--Stock-Photo.jpg");
+}
+/*only jpg and img work? png doesnt work sometimes maybe?*/
+.text {
+  color: blue;
+}
+.text2 {
+  color: red;
+}
+.text3{
+  color: purple;
+}
